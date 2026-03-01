@@ -1,3 +1,15 @@
+"""
+Day 01 - Added Pattern Ptoblem
+Difficulty: Moderate
+Concepts: Loops, Else-IF, Nested loops, Methods
+
+Approach:
+1. Create a method for each pattern(Triangle, Pyramid, Inverted_pyrramid)
+2. Build Logic for each patterns using loops carefully
+3. Create Menu for the patterns using Else-if
+4. Call the methods carefully.
+5. Check and do the intendation carefully
+"""
 def triangle(n):
     for i in range(1, n):
         for j in range(i):
