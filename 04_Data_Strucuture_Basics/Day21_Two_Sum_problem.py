@@ -1,0 +1,25 @@
+"""
+Day21:- Two sum problem
+Difficulty:- Medium
+Concept:- Lists , Loops , Indexing , Condition checking
+
+Approach:
+1. Take input list
+2. Take input of target number
+3. Create a found flag such that found = false
+4. use nested for loop range of 1st loop is len(n)
+5. For second loop use range (i+1, len(n)
+6. print indices
+"""
+n = input("Enter the list: ").split()
+n = [int(x) for x in n]
+target = int(input("Enter the target element: "))
+found = False
+for i in range (len(n)):
+    for j in range(i+1, len(n)):
+        if n[i] + n[j] == target:
+            print("indices", i, j)
+            found = True
+        
+if not found:
+    print("No two numbers are found whose some is equal to target")
